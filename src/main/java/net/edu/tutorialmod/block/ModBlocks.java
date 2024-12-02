@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.CryingObsidianBlock;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -12,6 +13,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block CRYING_NETHERITE_BLOCK = registerBlock("crying_netherite_block",
@@ -28,6 +30,21 @@ public class ModBlocks {
                 .requiresTool()
                 .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
                 .luminance(state -> 10)
+    ));
+
+    public static final Block CRYING_NETHERITE_ORE = registerBlock("crying_netherite_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),AbstractBlock.Settings.create()
+                    .strength(50f)
+                    .requiresTool()
+                    .luminance(state -> 10)
+            ));
+
+    public static final Block CRYING_NETHERITE_DEEPSLATE_ORE = registerBlock("crying_netherite_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),AbstractBlock.Settings.create()
+                    .strength(50f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .luminance(state -> 10)
     ));
 
     private static Block registerBlock(String name, Block block) {

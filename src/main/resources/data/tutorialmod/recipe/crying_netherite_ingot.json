@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:crying_netherite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "tutorialmod:crying_netherite_ingot"
+  }
+}

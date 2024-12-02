@@ -27,6 +27,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CRYING_NETHERITE_BLOCK);
                         entries.add(ModBlocks.CRYING_NETHERITE_DEBRIS);
+
+                        entries.add(ModBlocks.CRYING_NETHERITE_ORE);
+                        entries.add(ModBlocks.CRYING_NETHERITE_DEEPSLATE_ORE);
                     }).build());
 
     public static void registerItemGroups() {
