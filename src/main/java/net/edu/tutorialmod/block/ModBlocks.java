@@ -26,7 +26,7 @@ public class ModBlocks {
 
     public static final Block CRYING_NETHERITE_DEBRIS = registerBlock("crying_netherite_debris",
             new CryingObsidianBlock(AbstractBlock.Settings.create()
-                .strength(50f)
+                .strength(30f)
                 .requiresTool()
                 .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
                 .luminance(state -> 10)
@@ -34,14 +34,14 @@ public class ModBlocks {
 
     public static final Block CRYING_NETHERITE_ORE = registerBlock("crying_netherite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),AbstractBlock.Settings.create()
-                    .strength(50f)
+                    .strength(30f)
                     .requiresTool()
                     .luminance(state -> 10)
             ));
 
     public static final Block CRYING_NETHERITE_DEEPSLATE_ORE = registerBlock("crying_netherite_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),AbstractBlock.Settings.create()
-                    .strength(50f)
+                    .strength(30f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)
                     .luminance(state -> 10)
