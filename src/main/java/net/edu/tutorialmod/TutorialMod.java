@@ -1,5 +1,6 @@
 package net.edu.tutorialmod;
 
+import net.edu.tutorialmod.block.ModBlocks;
 import net.edu.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

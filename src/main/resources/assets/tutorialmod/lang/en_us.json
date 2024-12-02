@@ -1,4 +1,7 @@
 {
   "item.tutorialmod.crying_netherite_ingot": "Crying Netherite Ingot",
-  "item.tutorialmod.raw_crying_netherite_ingot": "Raw Crying Netherite Ingot"
+  "item.tutorialmod.raw_crying_netherite_ingot": "Raw Crying Netherite Ingot",
+
+  "block.tutorialmod.crying_netherite_block": "Crying Netherite Block",
+  "block.tutorialmod.crying_netherite_debris": "Crying Netherite Debris"
 }
